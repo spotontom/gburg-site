@@ -1,46 +1,68 @@
 export default function HomePage() {
   return (
-    <main className="p-6 bg-gradient-to-b from-stone-100 to-stone-300 min-h-screen text-gray-800">
-      <section className="max-w-4xl mx-auto text-center">
-        <h1 className="text-4xl font-bold mb-4 tracking-tight">
-          Welcome to the Lodge at SOTC
-        </h1>
-        <p className="text-lg mb-8">
-          A 3-story Smoky Mountain retreat nestled in the heart of Gatlinburg. Cozy wood finishes, breathtaking views, and unforgettable memories await.
-        </p>
-        <div className="rounded-lg overflow-hidden shadow-lg mb-8">
+    <main className="min-h-screen bg-stone-100 text-stone-800 px-6 py-12">
+      <section className="max-w-6xl mx-auto">
+        <div className="mb-10">
+          <h1 className="text-5xl font-bold tracking-tight mb-4">
+            Welcome to The Lodge at SOTC
+          </h1>
+          <p className="text-lg max-w-2xl">
+            A luxurious 3-story Smoky Mountain cabin located just 1 mile from Gatlinburg Parkway. Sleeps 12. Designed for families, groups, or romantic getaways. 
+            Enjoy scenic views, cozy wood finishes, a hot tub, and a full game room — all minutes from hiking, dining, and attractions.
+          </p>
+        </div>
+
+        <div className="rounded-lg overflow-hidden shadow-lg mb-12">
           <img
             src="/imgs/view1.jpg"
-            alt="Rustic Cabin in the Smoky Mountains"
-            className="w-full h-72 object-cover"
+            alt="The Lodge at SOTC"
+            className="w-full h-[400px] object-cover"
           />
         </div>
-        <div className="grid gap-6 md:grid-cols-2 text-left">
+
+        <section className="grid md:grid-cols-2 gap-10 text-base">
           <div>
-            <h2 className="text-xl font-semibold mb-2">🪵 Rustic Luxury</h2>
+            <h2 className="text-2xl font-semibold mb-2">🪵 Rustic Comfort Meets Modern Luxury</h2>
             <p>
-              Designed with natural wood textures, a fireplace on every floor, and panoramic views of the forested mountains.
+              The lodge features hand-crafted wood interiors, cathedral ceilings, and updated furnishings throughout. Three decks provide sweeping mountain views and ample space for relaxing.
             </p>
           </div>
+
           <div>
-            <h2 className="text-xl font-semibold mb-2">🛏️ Sleeps 12 Comfortably</h2>
+            <h2 className="text-2xl font-semibold mb-2">🛏️ 5 Bedrooms, Sleeps 12</h2>
             <p>
-              5 bedrooms, 4 bathrooms, and spacious living areas — perfect for families, groups, or romantic getaways.
+              Includes 2 king suites with private baths, 2 queen bedrooms, and a bunk room for kids or teens. Perfect for large families or couples traveling together.
             </p>
           </div>
+
           <div>
-            <h2 className="text-xl font-semibold mb-2">🔥 Hot Tub + Game Room</h2>
+            <h2 className="text-2xl font-semibold mb-2">🎮 Game Room + Theater Area</h2>
             <p>
-              Relax under the stars or enjoy classic arcade games, pool, and movie nights on the big screen.
+              Enjoy classic arcade games, a pool table, foosball, and a 75" smart TV. Movie night or game day? This space has you covered.
             </p>
           </div>
+
           <div>
-            <h2 className="text-xl font-semibold mb-2">🏞️ Prime Location</h2>
+            <h2 className="text-2xl font-semibold mb-2">🍳 Chef-Ready Kitchen</h2>
             <p>
-              Just minutes from downtown Gatlinburg, hiking trails, waterfalls, and everything the Smokies have to offer.
+              Fully stocked kitchen with granite counters, modern appliances, Keurig & drip coffee, and a gas grill outside. Cook with ease, dine in comfort.
             </p>
           </div>
-        </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-2">🔥 Private Hot Tub + Fire Pit</h2>
+            <p>
+              Relax in the covered hot tub or gather around the stone fire pit for stargazing and s’mores after a day of hiking.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold mb-2">📍 Minutes to Downtown & National Park</h2>
+            <p>
+              Less than 5 minutes to the Gatlinburg Strip, Anakeesta, and Ober Mountain. Quick access to the Great Smoky Mountains National Park entrance.
+            </p>
+          </div>
+        </section>
       </section>
     </main>
   );

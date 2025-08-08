@@ -1,0 +1,33 @@
+.availabilitySection {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Georgia, serif;
+    color: #3a2e2a;
+    line-height: 1.8;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #2f2f2f;
+  }
+  
+  .text {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .imageWrapper {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }

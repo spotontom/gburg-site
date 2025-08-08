@@ -1,0 +1,53 @@
+.bookingSection {
+    padding: 4rem 2rem;
+    background-color: #fefcf9;
+    color: #333;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .text {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  
+  .fillerContent {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .subheading {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .list li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .placeholderBox {
+    background-color: #f3f3f3;
+    border: 1px dashed #aaa;
+    padding: 2rem;
+    border-radius: 8px;
+    font-style: italic;
+    text-align: center;
+    color: #666;
+  }
