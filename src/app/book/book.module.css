@@ -1,53 +1,34 @@
-.bookingSection {
-    padding: 4rem 2rem;
-    background-color: #fefcf9;
-    color: #333;
-    text-align: center;
-  }
-  
-  .heading {
-    font-size: 2.2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  
-  .text {
-    font-size: 1rem;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    line-height: 1.6;
-  }
-  
-  .fillerContent {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: left;
-  }
-  
-  .subheading {
-    font-size: 1.4rem;
-    margin-bottom: 0.75rem;
-    font-weight: 500;
-    color: #444;
-  }
-  
-  .list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 2rem;
-  }
-  
-  .list li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  .placeholderBox {
-    background-color: #f3f3f3;
-    border: 1px dashed #aaa;
-    padding: 2rem;
-    border-radius: 8px;
-    font-style: italic;
-    text-align: center;
-    color: #666;
-  }
+.page { background: #faf7f3; color: #1f2937; min-height: 100vh; }
+.section { padding: 24px 16px; }
+.container { max-width: 960px; margin: 0 auto; }
+
+.title { font-size: clamp(1.6rem, 7vw, 2.8rem); line-height: 1.2; margin: 0 0 8px; }
+.lead  { font-size: clamp(1rem, 4.2vw, 1.125rem); line-height: 1.55; max-width: 65ch; }
+.list  { font-size: clamp(1rem, 4.2vw, 1.125rem); line-height: 1.5; }
+
+.grid { display: grid; gap: 24px; }
+
+.card { background: #fff; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.08); padding: 16px; }
+.field { display: grid; gap: 6px; }
+.label { font-size: .9rem; color: #44403c; }
+.input, .select, .textarea {
+  width: 100%; padding: 12px; font-size: 16px;
+  border: 1px solid #e5e7eb; border-radius: 10px; background: #fff;
+}
+.button {
+  margin-top: 4px; border: 0; cursor: pointer;
+  background: #0891b2; color: #fff; font-weight: 600;
+  padding: 12px 18px; border-radius: 999px; min-height: 44px;
+}
+
+.note {
+  margin-top: 16px; text-align: center; color: #6b7280;
+  border: 1px dashed #d6d3d1; background: #fafaf9; padding: 16px; border-radius: 12px;
+}
+
+/* breakpoints */
+@media (min-width: 768px){
+  .title { font-size: 3rem; }
+  .grid { grid-template-columns: 1fr 1fr; }
+  .dates { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+}

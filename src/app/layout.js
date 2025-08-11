@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import './globals.css';
+import Navbar from "./components/Navbar"
 
 export const metadata = {
   title: 'SOTC Property Site',
@@ -10,21 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="font-sans">
-      <nav className="navbar">
-  <div className="navbar-container">
-    <div className="logo-section">
-      <img src="/imgs/logo.jpeg" alt="Lodge Logo" className="logo-img" />
-      <span className="site-title">Bearadise in the Smokies</span>
-    </div>
-    <div className="nav-links">
-      <Link href="/">Home</Link>
-      <Link href="/availability">Availability</Link>
-      <Link href="/book">Book</Link>
-      <Link href="/about">About</Link>
-      <Link href="/contact">Contact</Link>
-    </div>
-  </div>
-</nav>
+      <Navbar />
         <img src="/imgs/transparent_logo.png" alt="Bearadise Logo" className="overlay-logo" />
         <main className="min-h-screen bg-stone-50 text-stone-900">{children}</main>
         <footer className="footer">
