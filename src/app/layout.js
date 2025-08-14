@@ -7,6 +7,13 @@ export const metadata = {
   description: 'Explore and book beautiful vacation rentals',
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+  themeColor: '#f4e9dd', // also tints mobile browser chrome
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -30,8 +37,9 @@ export default function RootLayout({ children }) {
               <h4>Links</h4>
               <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/availability">Availability</a></li>
                 <li><a href="/book">Book</a></li>
+                <li><a href="/availability">Availability</a></li>
+                <li><a href="/nearby">Nearby & Fun</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/contact">Contact</a></li>
               </ul>

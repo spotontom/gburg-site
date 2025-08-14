@@ -7,7 +7,6 @@ export default function Navbar(){
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  // Close menu when route changes
   useEffect(()=> { setOpen(false); }, [pathname]);
 
   return (
@@ -30,9 +29,14 @@ export default function Navbar(){
         <div className={`nav-links ${open ? "open" : ""}`}>
           <Link href="/">Home</Link>
           <Link href="/availability">Availability</Link>
-          <Link href="/book">Book</Link>
+          <Link href="/nearby">Nearby &amp; Fun</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
+
+          {/* Standout CTA */}
+          <Link href="/book" className="book-cta" aria-label="Book your stay now">
+            Book Now
+          </Link>
         </div>
       </div>
     </nav>
