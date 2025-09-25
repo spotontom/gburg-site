@@ -13,7 +13,7 @@ export default function AboutPage() {
 
       <h2 className={styles.aboutSubheading}>Designed with Purpose</h2>
       <p className={styles.aboutText}>
-        Every detail, from the hand-picked wood accents to the cozy furnishings, reflects Summer’s eye for comfort and Matt’s appreciation for the natural beauty of the Smokies.
+        Every detail, from the hand-picked wood accents to the cozy furnishings, reflects Summer&#39;s eye for comfort and Matt&#39;s appreciation for the natural beauty of the Smokies.
         The cabin is a modern escape, balanced by rustic charm and refined mountain character.
       </p>
 
