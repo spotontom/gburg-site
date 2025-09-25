@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar(){
@@ -13,7 +14,7 @@ export default function Navbar(){
     <nav className="navbar" role="navigation" aria-label="Main">
       <div className="navbar-container">
         <div className="logo-section">
-          <img src="/imgs/logo.jpeg" alt="Lodge Logo" className="logo-img" />
+        <Image src="/imgs/logo.jpeg" alt="Lodge Logo" className="logo-img" width={120} height={60} />
           <span className="site-title">Bearadise in the Smokies</span>
         </div>
 

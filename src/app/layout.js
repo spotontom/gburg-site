@@ -36,12 +36,12 @@ export default function RootLayout({ children }) {
             <div className="footer-section">
               <h4>Links</h4>
               <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/book">Book</a></li>
-                <li><a href="/availability">Availability</a></li>
-                <li><a href="/nearby">Nearby & Fun</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><Link href="/">Home</Link></li>
+                <li><Link href="/book">Book</Link></li>
+                <li><Link href="/availability">Availability</Link></li>
+                <li><Link href="/nearby">Nearby & Fun</Link></li>
+                <li><Link href="/about">About</Link></li>
+                <li><Link href="/contact">Contact</Link></li>
               </ul>
             </div>
 

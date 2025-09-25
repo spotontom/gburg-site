@@ -18,7 +18,7 @@ export default function AboutPage() {
       </p>
 
       <p className={styles.aboutText}>
-        Whether you're sipping coffee on the porch or relaxing by the fire, Bearadise offers a space to slow down, recharge, and connect with nature.
+        Whether you&#39;re sipping coffee on the porch or relaxing by the fire, Bearadise offers a space to slow down, recharge, and connect with nature.
       </p>
     </section>
   );
