@@ -1,129 +1,73 @@
 "use client";
-import { useState } from "react";
+
+
+import { useEffect } from "react";
 import styles from "./book.module.css";
 
-export default function Book(){
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    arrival: "",
-    departure: "",
-    guests: "",
-    message: "",
-  });
-  const [status, setStatus] = useState({ sending: false, done: false, error: "" });
 
-  const minArrival = new Date().toISOString().split("T")[0];
+export default function Book() {
+  useEffect(() => {
+    const container = document.getElementById("ownerrez-widget-container");
+  
+    // Clean out any previous widget content
+    container.innerHTML = "";
+  
+    // Create widget div and append
+    const widgetDiv = document.createElement("div");
+    widgetDiv.className = "ownerrez-widget";
+    widgetDiv.setAttribute("data-propertyId", "dcb31f5dee5c4c798252ddea699d32c9");
+    widgetDiv.setAttribute("data-widget-type", "Bearadise in the Smokies - Booking/Inquiry");
+    widgetDiv.setAttribute("data-widgetId", "7b5391064ae34b03972ade21d1f00b58");
+    container.appendChild(widgetDiv);
+  
+    const injectScript = () => {
+      const existing = document.querySelector('script[src="https://app.ownerrez.com/widget.js"]');
+  
+      if (!existing) {
+        const script = document.createElement("script");
+        script.src = "https://app.ownerrez.com/widget.js";
+        script.async = true;
+  
+        script.onload = () => {
+          console.log("✅ OwnerRez script loaded");
+          if (window.ORW && typeof window.ORW.initAll === "function") {
+            window.ORW.initAll();
+          } else {
+            console.error("❌ window.ORW still undefined after script load");
+          }
+        };
+  
+        script.onerror = () => {
+          console.error("❌ Failed to load OwnerRez widget.js");
+        };
+  
+        document.body.appendChild(script);
+      } else {
+        console.log("ℹ️ OwnerRez script already present");
+        if (window.ORW && typeof window.ORW.initAll === "function") {
+          window.ORW.initAll();
+        }
+      }
+    };
+  
+    // Small delay to allow hydration to complete
+    setTimeout(injectScript, 300);
+  }, []);
 
-  const onChange = (e) => {
-    const { name, value } = e.target;
-    setForm((f) => ({ ...f, [name]: value }));
-  };
+return (
+<main className={styles.page}>
+<section className={styles.section}>
+<div className={styles.container}>
+<h1 className={styles.title}>Book Your Stay</h1>
+<p className={styles.lead}>Use the secure booking tool below to check availability, request a quote, or confirm your stay at Bearadise in the Smokies.</p>
 
-  const validate = () => {
-    if (!form.name.trim()) return "Please enter your full name.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) return "Please enter a valid email.";
-    if (!form.arrival || !form.departure) return "Please choose arrival and departure dates.";
-    if (new Date(form.departure) <= new Date(form.arrival)) return "Departure must be after arrival.";
-    if (!form.guests) return "Please select number of guests.";
-    return "";
-  };
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    const err = validate();
-    if (err) { setStatus({ sending:false, done:false, error: err }); return; }
+<div id="ownerrez-widget-container" className={styles.widgetWrapper}></div>
 
-    setStatus({ sending:true, done:false, error:"" });
 
-    try {
-      // ===== Today: send to your own API route (email or save) =====
-      // Create /app/api/booking/route.js (see below) and uncomment:
-      // await fetch("/api/booking", { method:"POST", headers:{ "Content-Type":"application/json" }, body: JSON.stringify(form) });
-
-      // Simulate:
-      await new Promise((r)=> setTimeout(r, 700));
-
-      // ===== Later: OwnerRez handoff (when you have an account) =====
-      // const ownerRezQuoteUrl = `https://app.ownerrez.com/forms/quotes/XXXXXXXXXXXX?arrival=${form.arrival}&departure=${form.departure}&adults=${form.guests}`;
-      // window.location.href = ownerRezQuoteUrl;
-      // return;
-
-      setStatus({ sending:false, done:true, error:"" });
-      // Optional: reset form after success
-      // setForm({ name:"", email:"", arrival:"", departure:"", guests:"", message:"" });
-    } catch (e) {
-      setStatus({ sending:false, done:false, error:"Something went wrong. Please try again." });
-    }
-  };
-
-  return (
-    <main className={styles.page}>
-      <section className={styles.section}>
-        <div className={styles.container}>
-          <h1 className={styles.title}>Book Your Stay</h1>
-          <p className={styles.lead}>
-            We’re so glad you’re planning a trip to Bearadise in the Smokies! Booking your stay is quick and easy…
-          </p>
-
-          <div className={styles.grid}>
-            <ul className={styles.list}>
-              {[
-                "3-Story Luxury Cabin",
-                "Sleeps 12 Comfortably",
-                "Scenic Views + Cozy Fireplace",
-                "Private Hot Tub + Game Room",
-                "Just 1 Mile from Downtown Gatlinburg",
-              ].map((t)=> <li key={t}>✔️ {t}</li>)}
-            </ul>
-
-            <form className={`${styles.card} ${styles.form}`} onSubmit={onSubmit} noValidate>
-              <div className={styles.field}>
-                <label className={styles.label} htmlFor="name">Full Name</label>
-                <input id="name" name="name" className={styles.input} autoComplete="name" value={form.name} onChange={onChange} required />
-              </div>
-
-              <div className={styles.field}>
-                <label className={styles.label} htmlFor="email">Email</label>
-                <input id="email" name="email" className={styles.input} type="email" autoComplete="email" value={form.email} onChange={onChange} required />
-              </div>
-
-              <div className={`${styles.field} ${styles.dates}`}>
-                <div className={styles.field}>
-                  <label className={styles.label} htmlFor="arrival">Check-in</label>
-                  <input id="arrival" name="arrival" className={styles.input} type="date" min={minArrival} value={form.arrival} onChange={onChange} required />
-                </div>
-                <div className={styles.field}>
-                  <label className={styles.label} htmlFor="departure">Check-out</label>
-                  <input id="departure" name="departure" className={styles.input} type="date" min={form.arrival || minArrival} value={form.departure} onChange={onChange} required />
-                </div>
-              </div>
-
-              <div className={styles.field}>
-                <label className={styles.label} htmlFor="guests">Guests</label>
-                <select id="guests" name="guests" className={styles.select} value={form.guests} onChange={onChange} required>
-                  <option value="" disabled>Select guests</option>
-                  {[1,2,3,4,5,6,7,8,9,10,11,12].map(n => <option key={n} value={n}>{n}</option>)}
-                </select>
-              </div>
-
-              <div className={styles.field}>
-                <label className={styles.label} htmlFor="message">Message</label>
-                <textarea id="message" name="message" className={styles.textarea} rows={4} value={form.message} onChange={onChange} />
-              </div>
-
-              {status.error && <p className={styles.error} role="alert">{status.error}</p>}
-              {status.done && <p className={styles.success} role="status">Thanks! We’ve received your request—watch your email for next steps.</p>}
-
-              <button type="submit" className={styles.button} disabled={status.sending}>
-                {status.sending ? "Sending..." : "Request to Book"}
-              </button>
-            </form>
-          </div>
-
-          <div className={styles.note}>📅 Booking calendar coming soon…</div>
-        </div>
-      </section>
-    </main>
-  );
+<div className={styles.note}>✔️ Instant quotes, calendar sync, and secure booking powered by OwnerRez.</div>
+</div>
+</section>
+</main>
+);
 }
