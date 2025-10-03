@@ -359,28 +359,87 @@ main img {
   font-weight:600; letter-spacing:.1px; box-shadow:0 2px 10px rgba(0,0,0,.05);
 }
 
-/* AMENITIES / SLEEPING */
-.home-amenities{ padding:8px 0; }
-.home-amenity-groups{
-  width:min(92%,var(--home-max)); margin:0 auto 24px;
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:var(--home-gap);
-}
-.home-amenity-col,
-.home-sleep-card{
-  background:var(--beige-200);
-  border:1px solid var(--beige-300);
-  border-radius:14px;
-  box-shadow:0 6px 20px rgba(0,0,0,.06);
-  padding:16px 18px 16px 20px; /* room for stripe */
-  position:relative;
-}
-.home-amenity-col::before,
-.home-sleep-card::before{
-  content:""; position:absolute; inset:0 auto 0 0; width:6px; border-radius:14px 0 0 14px;
-  background:linear-gradient(180deg,var(--green-600),var(--green-500));
-}
-.home-amenity-col h3{ margin:2px 0 10px; font-size:16px; }
-.home-amenity-col ul{ padding-left:18px; margin:0; line-height:1.8; }
+/* ===========================
+   AMENITIES
+   =========================== */
+   .home-amenity-groups {
+    width: min(92%, var(--home-max));
+    margin: 0 auto 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--home-gap);
+  } 
+  .home-amenity-col {
+    background: var(--beige-200);
+    border: 1px solid var(--beige-300);
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .08);
+    padding: 18px 20px;
+    position: relative;
+  }
+  .home-amenity-col::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 6px;
+    border-radius: 14px 0 0 14px;
+    background: linear-gradient(180deg, var(--green-600), var(--green-500));
+  }
+  .home-amenity-col h3 {
+    margin: 0 0 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2f2f2f;
+  }
+  .home-amenity-col ul {
+    padding-left: 18px;
+    margin: 0;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    color: #444;
+  }
+
+/* ===========================
+   SLEEPING (override styles)
+   =========================== */
+   .home-sleep-grid {
+    width: min(92%, var(--home-max));
+    margin: 0 auto 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .home-sleep-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--beige-200);
+    border: 1px solid var(--beige-300);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.08);
+    overflow: hidden; /* keep images clipped */
+    padding: 0;       /* remove the text padding from amenities */
+    position: relative;
+  }
+  .home-sleep-card::before {
+    display: none; /* remove the green stripe on sleep cards */
+  }
+  .sleep-img {
+    width: 100%;
+    height: 220px;         /* consistent height */
+    object-fit: cover;     /* crop instead of stretch */
+    display: block;
+  }
+  .home-sleep-card h3 {
+    margin: 16px 16px 8px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2f2f2f;
+  }
+  .home-sleep-card p {
+    margin: 0 16px 16px;
+    font-size: 0.95rem;
+    color: #555;
+  }
 
 /* FACTS / CTA block */
 .home-facts{

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function HomePage() {
   return (
     <main className="home-page">
@@ -22,35 +24,53 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FEATURE IMAGE 
-      <section className="home-figure">
-        <img src="/imgs/view1.jpg" alt="Mountain view from The Lodge at SOTC" />
-      </section> */}
-
-      {/* HIGHLIGHTS (mixed style) */}
-<section className="home-highlights" aria-label="Highlights">
+      <section className="home-highlights" aria-label="Highlights">
   <div className="home-section-head">
     <h2>Why You’ll Love It</h2>
     <p>Perfect location off the Parkway in Gatlinburg, built for family fun and relaxation.</p>
   </div>
 
-  {/* Media list (3 items) */}
   <div className="home-media-list">
+    {/* Game Room */}
     <article className="home-media">
       <div className="home-media-head">Game Lounge</div>
+      <Image
+        src="/imgs/gameroom/1-web-or-mls-DSC_4190.jpg"
+        alt="Game lounge photo"
+        width={600}
+        height={400}
+        className="media-img"
+      />
       <p>Polycade arcade system, game table (air hockey & ping pong), plus big-screen TV.</p>
     </article>
 
+    {/* Hot Tub */}
     <article className="home-media">
       <div className="home-media-head">Private Hot Tub</div>
+      <Image
+        src="/imgs/view1.jpg"
+        alt="Hot tub with view"
+        width={600}
+        height={400}
+        className="media-img"
+      />
       <p>Covered tub on the balcony with mountain views—ideal for stargazing.</p>
     </article>
 
+    {/* Living Room */}
     <article className="home-media">
       <div className="home-media-head">Loft Nook</div>
+      <Image
+        src="/imgs/livingroom.jpg"
+        alt="Living room photo"
+        width={600}
+        height={400}
+        className="media-img"
+      />
       <p>Cozy ladder-access hangout for kids—watch movies, play games, or relax.</p>
     </article>
   </div>
+</section>
 
   {/* Feature chips (3 items) */}
   <div className="home-chip-row">
@@ -58,7 +78,6 @@ export default function HomePage() {
     <span className="home-chip">Fast Wi-Fi</span>
     <span className="home-chip">Central Location</span>
   </div>
-</section>
 
       {/* AMENITIES */}
       <section className="home-amenities">
@@ -106,30 +125,66 @@ export default function HomePage() {
       </section>
 
       {/* SLEEPING */}
-      <section className="home-sleep">
-        <div className="home-section-head">
-          <h2>Sleeping Arrangements</h2>
-          <p>3 king bedrooms + 2 queen sleeper sofas • 3 full bathrooms</p>
-        </div>
-        <div className="home-sleep-grid">
-          <article className="home-sleep-card">
-            <h3>Main Floor King Suite</h3>
-            <p>Private bath, mountain views, direct balcony access</p>
-          </article>
-          <article className="home-sleep-card">
-            <h3>Upper Floor King Suite</h3>
-            <p>Private bath, adjacent to loft & nook area</p>
-          </article>
-          <article className="home-sleep-card">
-            <h3>Basement King Bedroom</h3>
-            <p>Near game lounge & laundry room</p>
-          </article>
-          <article className="home-sleep-card">
-            <h3>Queen Sleeper Sofas</h3>
-            <p>One in loft, one in basement lounge</p>
-          </article>
-        </div>
-      </section>
+<section className="home-sleep">
+  <div className="home-section-head">
+    <h2>Sleeping Arrangements</h2>
+    <p>3 king bedrooms + 2 queen sleeper sofas • 3 full bathrooms</p>
+  </div>
+
+  <div className="home-sleep-grid">
+    {/* Main Floor King Suite */}
+    <article className="home-sleep-card">
+      <Image
+        src="/imgs/9-web-or-mls-DSC_4211.jpg" 
+        alt="Main floor bathroom photo"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>Main Floor King Suite</h3>
+      <p>Private bath, mountain views, direct balcony access</p>
+    </article>
+
+    {/* Upper Floor King Suite */}
+    <article className="home-sleep-card">
+      <Image
+        src="/imgs/10-web-or-mls-DSC_4214.jpg" 
+        alt="Upper floor bathroom photo"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>Basement Bathroom Suite</h3>
+      <p>Private bath, adjacent to gameroom & bedroom</p>
+    </article>
+
+    {/* Basement King Bedroom */}
+    <article className="home-sleep-card">
+      <Image
+        src="/imgs/13-web-or-mls-DSC_4223.jpg"
+        alt="Basement king bedroom photo"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>Basement King Bedroom</h3>
+      <p>Near game lounge & laundry room</p>
+    </article>
+
+    {/* Queen Sleeper Sofas */}
+    <article className="home-sleep-card">
+      <Image
+        src="/imgs/livingroom.jpg"
+        alt="Living room sleeper sofa"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>Queen Sleeper Sofas</h3>
+      <p>One in loft, one in basement lounge</p>
+    </article>
+  </div>
+</section>
 
       {/* FACTS / CTA */}
       <section className="home-facts">
