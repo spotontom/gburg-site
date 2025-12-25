@@ -74,7 +74,7 @@ export default function HomePage() {
     <article className="home-media">
       <div className="home-media-head">Secret Kids Kave</div>
       <Image
-        src="/imgs/DSC_8388.jpg"
+        src="/imgs/DSC_8378.jpg"
         alt="Living room photo"
         width={600}
         height={400}
