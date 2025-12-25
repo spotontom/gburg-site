@@ -1,5 +1,5 @@
 import Image from "next/image";
-import GalleryCarousel from "./components/GalleryCarousel";
+import GalleryCarousel from "./components/Gallerycarousel";
 
 export default function HomePage() {
   return (
