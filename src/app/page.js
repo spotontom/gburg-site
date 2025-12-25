@@ -20,14 +20,6 @@ export default function HomePage() {
             New 3-story modern cabin • Sleeps 12 • Stunning Smoky Mountain views
           </p>
           <div className="home-cta">
-            <a
-              className="home-btn primary"
-              href="https://www.airbnb.com/rooms/1014022255504809661"
-              target="_blank"
-              rel="noopener"
-            >
-              View Availability
-            </a>
             <a className="home-btn ghost" href="/book">Book Now</a>
           </div>
         </div>
