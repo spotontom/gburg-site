@@ -282,7 +282,7 @@ main img {
 .home-hero{
   position:relative;
   min-height:clamp(520px,72vh,760px);
-  background:url('/imgs/DSC_8246') 50% 45%/cover no-repeat;
+  background:url('/imgs/DSC_8246.jpg') 50% 45%/cover no-repeat;
   display:flex; align-items:flex-end; justify-content:center;
 }
 .home-hero::before,
