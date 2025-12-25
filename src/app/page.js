@@ -143,7 +143,7 @@ export default function HomePage() {
       <GalleryCarousel
       title="Amenities Photo Gallery"
       images={[
-          { src: "/imgs/frontview.jpg", alt: "Cabin exterior", caption: "Modern cabin exterior" },
+          { src: "/imgs/DSC_8426.jpg", alt: "Cabin exterior", caption: "Main View of Cabin" },
           { src: "/imgs/livingroom.jpg", alt: "Living room", caption: "Spacious living room + views" },
           { src: "/imgs/DSC_8388.jpg", alt: "Hot tub", caption: "Covered hot tub with mountain views" },
           { src: "/imgs/gameroom/1-web-or-mls-DSC_4190.jpg", alt: "Game lounge", caption: "Arcade + game table" },
