@@ -3,8 +3,17 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <main className="home-page">
-      {/* HERO */}
       <section className="home-hero" role="banner" aria-label="Cabin hero">
+        <Image
+          src="/imgs/DSC_8246.jpg"
+          alt="Bearadise cabin interior"
+          fill
+          priority
+          quality={95}
+          sizes="100vw"
+          style={{ objectFit: "cover", objectPosition: "50% 45%" }}
+        />
+
         <div className="home-hero-inner">
           <h1 className="home-hero-title"></h1>
           <p className="home-hero-subtitle">
