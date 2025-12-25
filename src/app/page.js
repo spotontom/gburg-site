@@ -5,7 +5,7 @@ export default function HomePage() {
     <main className="home-page">
       <section className="home-hero" role="banner" aria-label="Cabin hero">
         <Image
-          src="/imgs/DSC_8246.jpg"
+          src="/imgs/frontview.jpg"
           alt="Bearadise cabin interior"
           fill
           priority
