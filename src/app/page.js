@@ -48,7 +48,7 @@ export default function HomePage() {
     <article className="home-media">
       <div className="home-media-head">Private Hot Tub</div>
       <Image
-        src="/imgs/view1.jpg"
+        src="/imgs/DSC_8388.jpg"
         alt="Hot tub with view"
         width={600}
         height={400}
@@ -59,9 +59,22 @@ export default function HomePage() {
 
     {/* Living Room */}
     <article className="home-media">
-      <div className="home-media-head">Loft Nook</div>
+      <div className="home-media-head">Living Room</div>
       <Image
         src="/imgs/livingroom.jpg"
+        alt="Living room photo"
+        width={600}
+        height={400}
+        className="media-img"
+      />
+      <p>Cozy ladder-access hangout for kids—watch movies, play games, or relax.</p>
+    </article>
+
+    {/* Loft Nook */}
+    <article className="home-media">
+      <div className="home-media-head">Secret Kids Kave</div>
+      <Image
+        src="/imgs/DSC_8388.jpg"
         alt="Living room photo"
         width={600}
         height={400}
