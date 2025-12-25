@@ -1,4 +1,5 @@
 import Image from "next/image";
+import GalleryCarousel from "./components/GalleryCarousel";
 
 export default function HomePage() {
   return (
@@ -137,6 +138,18 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Slideshow */}
+      <GalleryCarousel
+      title="Amenities Photo Gallery"
+      images={[
+          { src: "/imgs/frontview.jpg", alt: "Cabin exterior", caption: "Modern cabin exterior" },
+          { src: "/imgs/livingroom.jpg", alt: "Living room", caption: "Spacious living room + views" },
+          { src: "/imgs/DSC_8388.jpg", alt: "Hot tub", caption: "Covered hot tub with mountain views" },
+          { src: "/imgs/gameroom/1-web-or-mls-DSC_4190.jpg", alt: "Game lounge", caption: "Arcade + game table" },
+          { src: "/imgs/DSC_8378.jpg", alt: "Kids kave", caption: "Secret kids kave hangout" },
+        ]}
+      /> 
 
       {/* SLEEPING */}
 <section className="home-sleep">
