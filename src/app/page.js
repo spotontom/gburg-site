@@ -67,7 +67,7 @@ export default function HomePage() {
         height={400}
         className="media-img"
       />
-      <p>Cozy ladder-access hangout for kids—watch movies, play games, or relax.</p>
+      <p>Spacious living area with fireplace, comfy seating, and views all around.</p>
     </article>
 
     {/* Loft Nook */}
@@ -104,7 +104,7 @@ export default function HomePage() {
               <li>Polycade arcade system</li>
               <li>Air hockey + ping pong combo table</li>
               <li>Loft nook w/ TV & seating</li>
-              <li>Smart TVs in multiple rooms</li>
+              <li>Smart TVs in every bedroom</li>
             </ul>
           </div>
           <div className="home-amenity-col">
