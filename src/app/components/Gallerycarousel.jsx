@@ -3,11 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
-export default function GalleryCarousel({
-  title = "Photo Gallery",
-  images = [],
-}) {
+export default function GalleryCarousel({ title = "Photo Gallery", images = [] }) {
   const trackRef = useRef(null);
+  const autoScrollingRef = useRef(false);
   const [index, setIndex] = useState(0);
 
   const count = images.length;
@@ -17,28 +15,39 @@ export default function GalleryCarousel({
   const prev = () => goTo(index - 1);
   const next = () => goTo(index + 1);
 
-  // Keep index synced when user swipes/scrolls
+  // Keep index synced when user swipes/scrolls (ignore while we are auto-scrolling)
   useEffect(() => {
     const el = trackRef.current;
     if (!el) return;
 
     const onScroll = () => {
+      if (autoScrollingRef.current) return; // key fix for desktop
       const w = el.clientWidth;
       if (!w) return;
+
       const i = Math.round(el.scrollLeft / w);
-      if (i !== index) setIndex(i);
+      setIndex((prevIndex) => (i === prevIndex ? prevIndex : i));
     };
 
     el.addEventListener("scroll", onScroll, { passive: true });
     return () => el.removeEventListener("scroll", onScroll);
-  }, [index]);
+  }, []);
 
-  // When index changes (buttons/dots), snap to that slide
+  // When index changes (buttons/dots), scroll to that slide and lock scroll syncing briefly
   useEffect(() => {
     const el = trackRef.current;
     if (!el) return;
+
+    autoScrollingRef.current = true;
+
     const w = el.clientWidth;
     el.scrollTo({ left: index * w, behavior: "smooth" });
+
+    const t = setTimeout(() => {
+      autoScrollingRef.current = false;
+    }, 450);
+
+    return () => clearTimeout(t);
   }, [index]);
 
   // Optional: keyboard arrow support when focused
