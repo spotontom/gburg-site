@@ -149,8 +149,8 @@ export default function HomePage() {
     {/* Main Floor King Suite */}
     <article className="home-sleep-card">
       <Image
-        src="/imgs/9-web-or-mls-DSC_4211.jpg" 
-        alt="Main floor bathroom photo"
+        src="/imgs/DSC_8357.jpg" 
+        alt="Main floor bedroom photo"
         width={500}
         height={350}
         className="sleep-img"

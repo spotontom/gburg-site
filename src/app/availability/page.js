@@ -13,7 +13,7 @@ export default function AvailabilityPage() {
 
       <div className={styles.imageWrapper}>
       <Image
-  src="/imgs/frontview.jpg"
+  src="/imgs/DSC_8397.jpg"
   alt="Availability calendar preview"
   width={800}
   height={500}
