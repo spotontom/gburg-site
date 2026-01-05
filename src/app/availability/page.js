@@ -8,7 +8,7 @@ export default function AvailabilityPage() {
       <h1 className={styles.heading}>Check Availability</h1>
       
       <p className={styles.text}>
-        Bearadise is a highly sought-after retreat — especially during peak season. Below you’ll find our current availability and booking options.
+        Bearadise in the Smokies is a highly sought-after retreat, especially during peak season. Below you’ll find our current availability and booking options.
       </p>
 
       <div className={styles.imageWrapper}>

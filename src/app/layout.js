@@ -45,11 +45,6 @@ export default function RootLayout({ children }) {
               </ul>
             </div>
 
-            <div className="footer-section">
-              <h4>Contact</h4>
-              <p>Email: info@bearadiselodge.com</p>
-              <p>Phone: (850) 123-4567</p>
-            </div>
           </div>
         </footer>
       </body>

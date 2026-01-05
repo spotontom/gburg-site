@@ -56,7 +56,7 @@ export default function HomePage() {
         height={400}
         className="media-img"
       />
-      <p>Covered tub on the balcony with mountain views—ideal for stargazing.</p>
+      <p>Covered tub on the balcony with mountain views, ideal for stargazing.</p>
     </article>
 
     {/* Living Room */}
@@ -82,7 +82,7 @@ export default function HomePage() {
         height={400}
         className="media-img"
       />
-      <p>Cozy ladder-access hangout for kids—watch movies, play games, or relax.</p>
+      <p>Cozy ladder-access hangout for kids, watch movies, play games, or relax.</p>
     </article>
   </div>
 </section>
@@ -218,9 +218,9 @@ export default function HomePage() {
         <ul className="home-facts-list">
           <li><strong>Stories:</strong> 3</li>
           <li><strong>Bathrooms:</strong> 3 full</li>
-          <li><strong>Check-in:</strong> After 4:00 PM</li>
+          <li><strong>Check-in:</strong> 4:00 PM</li>
           <li><strong>Check-out:</strong> Before 10:00 AM</li>
-          <li><strong>Pets:</strong> Please inquire</li>
+          <li><strong>Pets:</strong> This property is not pet friendly</li>
           <li><strong>Parking:</strong> On-site</li>
           <li><strong>House Rules:</strong> No parties, no smoking, quiet hours 10pm–8am</li>
         </ul>
