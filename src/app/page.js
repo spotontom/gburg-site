@@ -36,7 +36,7 @@ export default function HomePage() {
 
   <div className="home-media-list">
     {/* Game Room */}
-    <article className="home-media">
+    <div className="home-media">
       <div className="home-media-head">Game Lounge</div>
       <Image
         src="/imgs/gameroom/1-web-or-mls-DSC_4190.jpg"
@@ -46,10 +46,10 @@ export default function HomePage() {
         className="media-img"
       />
       <p>Polycade arcade system, game table (air hockey & ping pong), plus big-screen TV.</p>
-    </article>
+    </div>
 
     {/* Hot Tub */}
-    <article className="home-media">
+    <div className="home-media">
       <div className="home-media-head">Private Hot Tub</div>
       <Image
         src="/imgs/DSC_8388.jpg"
@@ -59,10 +59,10 @@ export default function HomePage() {
         className="media-img"
       />
       <p>Covered tub on the balcony with mountain views, ideal for stargazing.</p>
-    </article>
+    </div>
 
     {/* Living Room */}
-    <article className="home-media">
+    <div className="home-media">
       <div className="home-media-head">Living Room</div>
       <Image
         src="/imgs/livingroom.jpg"
@@ -72,10 +72,10 @@ export default function HomePage() {
         className="media-img"
       />
       <p>Spacious living area with fireplace, comfy seating, and views all around.</p>
-    </article>
+    </div>
 
     {/* Loft Nook */}
-    <article className="home-media">
+    <div className="home-media">
       <div className="home-media-head">Secret Kids Kave</div>
       <Image
         src="/imgs/DSC_8378.jpg"
@@ -85,7 +85,7 @@ export default function HomePage() {
         className="media-img"
       />
       <p>Cozy ladder access hangout for kids, watch movies, play games, or relax.</p>
-    </article>
+    </div>
   </div>
 </section>
 
@@ -162,7 +162,7 @@ export default function HomePage() {
 
   <div className="home-sleep-grid">
     {/* Main Floor King Suite */}
-    <article className="home-sleep-card">
+    <div className="home-sleep-card">
       <Image
         src="/imgs/DSC_8357.jpg" 
         alt="Main floor bedroom photo"
@@ -172,10 +172,10 @@ export default function HomePage() {
       />
       <h3>Main Floor King Suite</h3>
       <p>Private bath, mountain views, direct balcony access</p>
-    </article>
+    </div>
 
     {/* Upper Floor King Suite */}
-    <article className="home-sleep-card">
+    <div className="home-sleep-card">
       <Image
         src="/imgs/10-web-or-mls-DSC_4214.jpg" 
         alt="Upper floor bathroom photo"
@@ -185,10 +185,10 @@ export default function HomePage() {
       />
       <h3>Basement Bathroom Suite</h3>
       <p>Private bath, adjacent to gameroom & bedroom</p>
-    </article>
+    </div>
 
     {/* Basement King Bedroom */}
-    <article className="home-sleep-card">
+    <div className="home-sleep-card">
       <Image
         src="/imgs/13-web-or-mls-DSC_4223.jpg"
         alt="Basement king bedroom photo"
@@ -198,10 +198,10 @@ export default function HomePage() {
       />
       <h3>Basement King Bedroom</h3>
       <p>Near game lounge & laundry room</p>
-    </article>
+    </div>
 
     {/* Queen Sleeper Sofas */}
-    <article className="home-sleep-card">
+    <div className="home-sleep-card">
       <Image
         src="/imgs/livingroom.jpg"
         alt="Living room sleeper sofa"
@@ -211,7 +211,7 @@ export default function HomePage() {
       />
       <h3>Queen Sleeper Sofas</h3>
       <p>One in loft, one in basement lounge</p>
-    </article>
+    </div>
   </div>
 </section>
 
