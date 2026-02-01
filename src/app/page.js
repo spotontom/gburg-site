@@ -16,7 +16,7 @@ export default function HomePage() {
         />
 
         <div className="home-hero-inner">
-        <h1 id="home-hero-title" className="home-hero-title">
+        <h1 id="home-hero-title" className="home-hero-title sr-only">
           Bearadise in the Smokies
         </h1>
           <p className="home-hero-subtitle">
