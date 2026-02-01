@@ -694,3 +694,9 @@ button:focus-visible {
   outline: 3px solid #000;
   outline-offset: 3px;
 }
+
+.nav-links{
+  list-style: none;   /* ← kills bullets */
+  margin: 0;          /* ← removes default UL spacing */
+  padding: 0;         /* ← removes default UL spacing */
+}
