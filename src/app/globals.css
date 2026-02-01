@@ -583,7 +583,7 @@ main img {
 .skip-link {
   position: absolute;
   left: -999px;
-  top: 10px;
+  top: 0;
   background: #fff;
   color: #000;
   padding: 10px 14px;
@@ -594,6 +594,7 @@ main img {
 
 .skip-link:focus {
   left: 10px;
+  top: 10px;
 }
 
 /* Nav arrows */
