@@ -82,7 +82,7 @@ export default function HomePage() {
         height={400}
         className="media-img"
       />
-      <p>Cozy ladder-access hangout for kids, watch movies, play games, or relax.</p>
+      <p>Cozy ladder access hangout for kids, watch movies, play games, or relax.</p>
     </article>
   </div>
 </section>
