@@ -20,7 +20,7 @@ export default function Navbar() {
 
       <nav className="navbar" aria-label="Primary navigation">
         <div className="navbar-container">
-          <Link href="/" className="logo-section">
+          <div className="logo-section">
             <Image
               src="/imgs/logo.jpeg"
               alt="Bearadise in the Smokies"
@@ -30,7 +30,7 @@ export default function Navbar() {
               priority
             />
             <span className="site-title">Bearadise in the Smokies</span>
-          </Link>
+          </div>
 
           <button
             className="burger"
