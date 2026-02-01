@@ -42,6 +42,8 @@ export default function RootLayout({ children }) {
                 <li><Link href="/nearby">Nearby & Fun</Link></li>
                 <li><Link href="/about">About</Link></li>
                 <li><Link href="/contact">Contact</Link></li>
+                <li><Link href="/accessibility">Accessibility</Link></li>
+                <li><Link href="/privacy">Privacy</Link></li>
               </ul>
             </div>
 
