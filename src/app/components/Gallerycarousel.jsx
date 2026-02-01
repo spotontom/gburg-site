@@ -95,7 +95,7 @@ export default function GalleryCarousel({ title = "Photo Gallery", images = [] }
           type="button"
           onClick={prev}
           disabled={!canPrev}
-          aria-label="Previous photo"
+          id="Previous photo"
         >
           ‹
         </button>
@@ -105,7 +105,7 @@ export default function GalleryCarousel({ title = "Photo Gallery", images = [] }
           type="button"
           onClick={next}
           disabled={!canNext}
-          aria-label="Next photo"
+          id="Next photo"
         >
           ›
         </button>
