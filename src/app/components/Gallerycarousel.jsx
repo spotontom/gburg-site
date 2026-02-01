@@ -84,7 +84,7 @@ export default function GalleryCarousel({ title = "Photo Gallery", images = [] }
               </div>
 
               {img.caption ? (
-                <div className="gallery-caption">{img.caption}</div>
+                <div className="gallery-caption" aria-hidden="true">{img.caption}</div>
               ) : null}
             </div>
           ))}
