@@ -3,8 +3,8 @@ import GalleryCarousel from "./components/Gallerycarousel";
 
 export default function HomePage() {
   return (
-    <main className="home-page">
-      <section className="home-hero" role="banner" aria-label="Cabin hero">
+    <div className="home-page">
+      <section className="home-hero" aria-label="Cabin hero">
         <Image
           src="/imgs/frontview.jpg"
           alt="Bearadise cabin interior"
@@ -16,7 +16,9 @@ export default function HomePage() {
         />
 
         <div className="home-hero-inner">
-          <h1 className="home-hero-title"></h1>
+        <h1 id="home-hero-title" className="home-hero-title">
+          Bearadise in the Smokies
+        </h1>
           <p className="home-hero-subtitle">
             New 3-story modern cabin • Sleeps 12 • Stunning Smoky Mountain views
           </p>
@@ -235,6 +237,6 @@ export default function HomePage() {
           </a>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
