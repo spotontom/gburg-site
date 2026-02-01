@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         </a>
 
         <header>
-          <nav aria-label="Primary navigation">
+          <nav id="Primary navigation">
             <Navbar />
           </nav>
 
