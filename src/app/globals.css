@@ -700,3 +700,16 @@ button:focus-visible {
   margin: 0;          /* ← removes default UL spacing */
   padding: 0;         /* ← removes default UL spacing */
 }
+
+@media (max-width: 768px) {
+  .nav-links {
+    width: 100vw;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) translateY(-6px);
+  }
+
+  .nav-links.open {
+    transform: translateX(-50%) translateY(0);
+  }
+}
