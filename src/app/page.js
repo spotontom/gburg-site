@@ -129,15 +129,6 @@ export default function HomePage() {
               <li>High-speed Wi-Fi</li>
             </ul>
           </div>
-          <div className="home-amenity-col">
-            <h3>Family</h3>
-            <ul>
-              <li>Kid-friendly loft nook</li>
-              <li>Pack ’n Play (if available)</li>
-              <li>High chair (if available)</li>
-              <li>Board games</li>
-            </ul>
-          </div>
         </div>
       </section>
 
@@ -221,7 +212,7 @@ export default function HomePage() {
           <li><strong>Stories:</strong> 3</li>
           <li><strong>Bathrooms:</strong> 3 full</li>
           <li><strong>Check-in:</strong> 4:00 PM</li>
-          <li><strong>Check-out:</strong> Before 10:00 AM</li>
+          <li><strong>Check-out:</strong> Before 11:00 AM</li>
           <li><strong>Pets:</strong> This property is not pet friendly</li>
           <li><strong>Parking:</strong> On-site</li>
           <li><strong>House Rules:</strong> No parties, no smoking, quiet hours 10pm–8am</li>
@@ -229,11 +220,10 @@ export default function HomePage() {
         <div className="home-cta center">
           <a
             className="home-btn primary"
-            href="https://www.airbnb.com/rooms/1014022255504809661"
-            target="_blank"
+            href="/book"
             rel="noopener"
           >
-            See Dates on Airbnb
+            See Dates Available
           </a>
         </div>
       </section>

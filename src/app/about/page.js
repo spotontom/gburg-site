@@ -51,7 +51,7 @@ export default function AboutPage() {
       <p className={styles.aboutText}>
         •    Laundry room
         •    Large foyer and functional layout ideal for families and groups
-        •    Outdoor security cameras for safety and peace of mind
+        •    Outdoor security cameras for safety
       </p>
 
       <p className={styles.aboutText}>

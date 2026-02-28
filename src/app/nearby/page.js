@@ -12,9 +12,6 @@ export default function NearbyPage() {
       <section className={styles.hero}>
         <h1>Nearby & Fun</h1>
         <p>Handpicked hikes, eats, and attractions close to the lodge.</p>
-        <Link href="/book" className={styles.cta}>
-          Check Dates
-        </Link>
       </section>
 
       <section className={styles.grid}>
