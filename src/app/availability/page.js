@@ -10,15 +10,6 @@ export default function AvailabilityPage() {
       <p className={styles.text}>
         Bearadise in the Smokies is a highly sought after retreat, especially during peak season. Below you’ll find our current availability and booking options.
       </p>
-      <div className="home-cta center">
-          <a
-            className="home-btn primary"
-            href="/book"
-            rel="noopener"
-          >
-            See Dates Available
-          </a>
-        </div>
       <p className={styles.text}>
         For live calendar updates, booking inquiries, or to reserve your stay directly, use the booking tab above.
       </p>

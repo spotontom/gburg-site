@@ -148,9 +148,13 @@ export default function HomePage() {
 <section className="home-sleep">
   <div className="home-section-head">
     <h2>Sleeping Arrangements</h2>
-    <p>3 king bedrooms + 2 queen sleeper sofas • 3 full bathrooms</p>
+    </div>
+  <div className="home-chip-row">
+    <span className="home-chip">3 King Bedrooms</span>
+    <span className="home-chip">2 Queen Sleeper Sofas</span>
+    <span className="home-chip">3 Full Bathrooms</span>
   </div>
-
+  <p></p>
   <div className="home-sleep-grid">
     {/* Main Floor King Suite */}
     <div className="home-sleep-card">
