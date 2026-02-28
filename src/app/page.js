@@ -52,7 +52,7 @@ export default function HomePage() {
     <div className="home-media">
       <div className="home-media-head">Private Hot Tub</div>
       <Image
-        src="/imgs/DSC_8388.jpg"
+        src="/imgs/hottubbalc1.jpg"
         alt="Hot tub with view"
         width={600}
         height={400}
@@ -138,7 +138,7 @@ export default function HomePage() {
       images={[
           { src: "/imgs/DSC_8426.jpg", alt: "Cabin exterior", caption: "Main View of Cabin" },
           { src: "/imgs/livingroom.jpg", alt: "Living room", caption: "Spacious living room + views" },
-          { src: "/imgs/DSC_8388.jpg", alt: "Hot tub", caption: "Covered hot tub with mountain views" },
+          { src: "/imgs/hottubbalc1.jpg", alt: "Hot tub", caption: "Covered hot tub with mountain views" },
           { src: "/imgs/gameroom/1-web-or-mls-DSC_4190.jpg", alt: "Game lounge", caption: "Arcade + game table" },
           { src: "/imgs/DSC_8378.jpg", alt: "Kids kave", caption: "Secret kids kave hangout" },
         ]}
@@ -156,10 +156,33 @@ export default function HomePage() {
   </div>
   <p></p>
   <div className="home-sleep-grid">
+  <div className="home-sleep-card">
+      <Image
+        src="/imgs/DSC_8429.jpg"
+        alt="Front Porch"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>Front Porch</h3>
+      <p>Beautiful Front Porch, with spectatular smoky mountain views</p>
+    </div>
+    {/* Master Suite */}
+    <div className="home-sleep-card">
+      <Image
+        src="/imgs/mastersuite.jpg"
+        alt="Living room sleeper sofa"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>Master Suite</h3>
+      <p>Master Bedroom with private bathroom access</p>
+    </div>
     {/* Main Floor King Suite */}
     <div className="home-sleep-card">
       <Image
-        src="/imgs/DSC_8357.jpg" 
+        src="/imgs/mainfloorsuite.jpg" 
         alt="Main floor bedroom photo"
         width={500}
         height={350}
@@ -167,19 +190,6 @@ export default function HomePage() {
       />
       <h3>Main Floor King Suite</h3>
       <p>Private bath, mountain views, direct balcony access</p>
-    </div>
-
-    {/* Upper Floor King Suite */}
-    <div className="home-sleep-card">
-      <Image
-        src="/imgs/10-web-or-mls-DSC_4214.jpg" 
-        alt="Upper floor bathroom photo"
-        width={500}
-        height={350}
-        className="sleep-img"
-      />
-      <h3>Basement Bathroom Suite</h3>
-      <p>Private bath, adjacent to gameroom & bedroom</p>
     </div>
 
     {/* Basement King Bedroom */}
@@ -192,9 +202,59 @@ export default function HomePage() {
         className="sleep-img"
       />
       <h3>Basement King Bedroom</h3>
-      <p>Near game lounge & laundry room</p>
+      <p>Near game room, basement lounge, & laundry room</p>
     </div>
 
+    {/* Upstairs bathroom */}
+    <div className="home-sleep-card">
+          <Image
+            src="/imgs/masterbath.jpg" 
+            alt="Upstairs bathroom photo"
+            width={500}
+            height={350}
+            className="sleep-img"
+          />
+          <h3>Master Bathroom Suite</h3>
+          <p>Private bath access from master suite</p>
+        </div>
+
+   {/* Mainfloor bathroom */}
+   <div className="home-sleep-card">
+      <Image
+        src="/imgs/mainfloorbathroom.jpg" 
+        alt="Main floor bathroom photo"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>Main Floor Bathroom Suite</h3>
+      <p>Private bath access from main floor suite</p>
+    </div>
+
+  {/* Basement bathroom */}
+  <div className="home-sleep-card">
+        <Image
+          src="/imgs/10-web-or-mls-DSC_4214.jpg" 
+          alt="Upper floor bathroom photo"
+          width={500}
+          height={350}
+          className="sleep-img"
+        />
+        <h3>Basement Bathroom Suite</h3>
+        <p>Private bath, adjacent to gameroom & bedroom</p>
+      </div>
+    {/* Kitchen */}
+    <div className="home-sleep-card">
+      <Image
+        src="/imgs/kitchen.jpg"
+        alt="Living room sleeper sofa"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>Full Kitchen</h3>
+      <p>Everything you will need, to prepare, & enjoy meals</p>
+    </div>
     {/* Queen Sleeper Sofas */}
     <div className="home-sleep-card">
       <Image
@@ -204,8 +264,70 @@ export default function HomePage() {
         height={350}
         className="sleep-img"
       />
-      <h3>Queen Sleeper Sofas</h3>
-      <p>One in loft, one in basement lounge</p>
+      <h3>Main Floor Living Room</h3>
+      <p>Beautiful views, access to kitchen, sleeper sofas</p>
+    </div>
+
+    {/* 2nd floor loft */}
+    <div className="home-sleep-card">
+      <Image
+        src="/imgs/2ndloft.jpg"
+        alt="Living room sleeper sofa"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>2nd Floor Loft</h3>
+      <p>Quiet Space, Arcade Machine, access to kids nook, and master suite</p>
+    </div>
+
+    {/* Queen Sleeper Sofas */}
+    <div className="home-sleep-card">
+      <Image
+        src="/imgs/kidscave.jpg"
+        alt="Living room sleeper sofa"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>Kids Cave</h3>
+      <p>Private room, accessed by ladder, private tv</p>
+    </div>
+
+    {/* Game room */}
+    <div className="home-sleep-card">
+      <Image
+        src="/imgs/basementroom.jpg"
+        alt="Basement Game room"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>Basement Game Room</h3>
+      <p>All in one entertainment system, ping pong, access to balcony</p>
+    </div>
+    {/* Balcony 1 */}
+    <div className="home-sleep-card">
+      <Image
+        src="/imgs/hottubbalc1.jpg"
+        alt="Balcony 1"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>Main Floor Balcony</h3>
+      <p>Breathtaking views, & hotub</p>
+    </div>
+    <div className="home-sleep-card">
+      <Image
+        src="/imgs/balc2.jpg"
+        alt="Balcony 1"
+        width={500}
+        height={350}
+        className="sleep-img"
+      />
+      <h3>Basement Floor Balcony</h3>
+      <p>Breathtaking views, & a quiet space</p>
     </div>
   </div>
 </section>
