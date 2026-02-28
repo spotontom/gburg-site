@@ -20,9 +20,17 @@ export default function AvailabilityPage() {
   className={styles.image}
 />
       </div>
-
+      <div className="home-cta center">
+          <a
+            className="home-btn primary"
+            href="/book"
+            rel="noopener"
+          >
+            See Dates Available
+          </a>
+        </div>
       <p className={styles.text}>
-        For live calendar updates, booking inquiries, or to reserve your stay directly, visit our Airbnb listing or use the booking tab above.
+        For live calendar updates, booking inquiries, or to reserve your stay directly, use the booking tab above.
       </p>
     </section>
   );
